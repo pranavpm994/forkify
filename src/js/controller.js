@@ -149,6 +149,10 @@ addRecipeView.renderError(err.message);
   }
 }
 
+const newFeature = function(){
+  console.log('new branch');
+}
+
 const init = function () {
   bookMarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlReciepes);
@@ -158,7 +162,7 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   // controlServings();
-  console.log('Git modifying test!!!');
+  newFeature();
 };
 init();
 // controlReciepes();
